@@ -6,3 +6,13 @@
  select {
     font-size: 1.2em;
 }
+
+@media only screen and (max-width: 600px) {
+   #home-header {
+    font-size: 1.2em;
+   }
+
+   select {
+    font-size: .8em;
+   }
+  }
