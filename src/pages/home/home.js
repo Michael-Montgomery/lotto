@@ -3,6 +3,7 @@ import Header from '../../components/header/header';
 import NumberList from '../../components/numberList/number-list';
 import games from '../../games';
 import './home.css';
+import Disclaimer from '../../components/disclaimer/disclaimer';
 
 function Home() {
     const [gameSelection, setGameSelection] = useState('powerball')
@@ -19,6 +20,7 @@ function Home() {
                 {/* <option value='test'>Test</option> */}
             </select> Numbers Generator</h2>
             <NumberList game={games[gameSelection]}></NumberList>
+            <Disclaimer></Disclaimer>
         </>
     )
 }
